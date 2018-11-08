@@ -1,5 +1,7 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+File: infwarerr-test2.tex ....-..-.. v... Test file for plain-TeX
+\ErrHelpToks=\toks...
 Package PACKAGE Info: MESSAGE
 (PACKAGE)             SECOND LINE on input line ....
 Package PACKAGE Info: MESSAGE
@@ -20,7 +22,8 @@ Class CLASS Warning: MESSAGE
 ! Package PACKAGE Error: MESSAGE
 (PACKAGE)                SECOND LINE.
 See the PACKAGE package documentation for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...
 **************** help message *****************
 HELP
 SECOND LINE
@@ -29,7 +32,8 @@ SECOND LINE
 ! Class CLASS Error: MESSAGE
 (CLASS)              SECOND LINE.
 See the CLASS class documentation for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...
 **************** help message *****************
 HELP
 SECOND LINE
@@ -38,7 +42,8 @@ SECOND LINE
 ! Package PACKAGE Error: MESSAGE
 (PACKAGE)                SECOND LINE.
 See the PACKAGE package documentation for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...
 **************** help message *****************
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -47,7 +52,8 @@ If that doesn't work, type  X <return>  to quit.
 ! Package PACKAGE Error: MESSAGE
 (PACKAGE)                SECOND LINE.
 See the PACKAGE package documentation for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...
 **************** help message *****************
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.

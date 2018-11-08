@@ -1,15 +1,16 @@
-%% This is file `infwarerr-test3.lvt',
+%% This is file `infwarerr-test2.lvt',
 %% The original source files were:
 %%
-%% infwarerr.dtx  (with options: `test3')
-\input{regression-test}
-\NeedsTeXFormat{LaTeX2e}
-\ProvidesFile{infwarerr-test3.tex}[2016/05/16 v1.4 Test file for LaTeX]
-\RequirePackage{infwarerr}[2016/05/16]
-\makeatletter
+%% infwarerr.dtx  (with options: `test2')
+\input regression-test
+\let\PackageInfo\relax
+\input infwarerr.sty\relax
 \let\OrgWrite\write
-\chardef\WriteUnused=\@unused
+\chardef\WriteUnused=16 %
 \def\msg#{\immediate\OrgWrite\WriteUnused}
+\START
+\msg{File: infwarerr-test2.tex 2016/05/16 v1.4 Test file for plain-TeX}
+\catcode64=11 %
 \def\pkgname{PACKAGE}
 \def\clsname{CLASS}
 \def\msgtext{MESSAGE\MessageBreak SECOND LINE}
@@ -110,8 +111,7 @@
   }%
 }
 \def\TestError{%
-  \let\write\OrgWrite
-  \def\plaindots{}
+  \def\plaindots{.^^J ...^^J}
   \@PackageError\pkgname\msgtext\hlptext
   \@TestError\@PackageError{%
     ! Package PACKAGE Error: MESSAGE^^J%
@@ -161,8 +161,6 @@
   \begingroup
     \let~\space
     \edef\x{#2}%
-  \@onelevel@sanitize\x
-  \@onelevel@sanitize\ErrMessage
     \ifx\x\ErrMessage
     \else
       \msg{}%
@@ -183,11 +181,10 @@
     \fi
   \endgroup
 }
-\START
 \TestInfo
 \TestWarning
 \TestError
-\@@end
+\end
 \endinput
 %%
-%% End of file `infwarerr-test3.tex'.
+%% End of file `infwarerr-test2.tex'.
