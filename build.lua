@@ -8,6 +8,10 @@ unpackfiles = {'infwarerr.dtx'}
 
 checkconfigs = {"build","config-plain"}
 
+tdslocations={
+"tex/generic/infwarerr/infwarerr.sty"
+}
+
 packtdszip  = true
 
 maxprintline=10000
